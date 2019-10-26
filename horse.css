@@ -1,0 +1,51 @@
+.black.horse{
+    border-bottom-color: black;
+    border-right-color: black;
+}
+
+.white.horse{
+    border-bottom-color: white;
+    border-right-color: white;
+}
+
+.horse{
+    border: 40px solid;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-clip: content-box;
+}
+
+.horse::before, .horse::after{
+    display: block;
+    content: "";
+    position: absolute;
+}
+
+.black.horse::after{
+    border-bottom-color: black;
+    border-right-color: black;
+}
+
+.white.horse::after{
+    border-bottom-color: white;
+    border-right-color: white;
+}
+
+.horse::before{
+    width: 60px;
+    height: 23px;
+    border-radius: 50px;
+    background-color: inherit;
+    top: -31px;
+    left: -20px;
+}
+
+.horse::after{
+    border: 8px solid;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    top: -40px;
+}

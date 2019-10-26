@@ -1,0 +1,23 @@
+.cell{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: beige;
+}
+
+.line:nth-child(even) .cell:nth-child(odd),
+.line:nth-child(odd) .cell:nth-child(even){
+    background-color: brown;
+}
+
+.black {
+    background-color: black;
+    border-color: black;
+}
+
+.white {
+    background-color: white;
+    border-color: white;
+}

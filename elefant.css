@@ -1,0 +1,21 @@
+.elefant{
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.elefant::after{
+    width: 60px;
+    height: 8px;
+    top: 40px;
+    right: -22px;
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: inherit;
+}

@@ -1,0 +1,32 @@
+.queen{
+    width: 15px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.queen::before, .queen::after{
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: inherit;
+}
+
+.queen::before{
+    width: 34px;
+    height: 32px;
+    border-radius: 50%;
+    top: -18px;
+    left: -9px;
+}
+
+.queen::after{
+    width: 60px;
+    height: 8px;
+    top: 60px;
+    right: -22px;
+}
